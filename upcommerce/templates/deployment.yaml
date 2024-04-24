@@ -13,8 +13,8 @@ spec:
         app: {{ .Release.Name }}-app
     spec:
       containers:
-        - name: canary
-          image: {{ .Values.canary.image }}
+        - name: upcommerce
+          image: {{ .Values.upcommerce.image }}
           ports:
             - containerPort: 5000
           imagePullPolicy: {{ .Values.imagePullPolicy }}
